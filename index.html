@@ -14,13 +14,18 @@
     }
 
     header {
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
     }
 
     header video {
-      width: 100%;
-      max-height: 400px;
+      width: 90%;
+      max-width: 500px;
+      aspect-ratio: 1 / 1;
       object-fit: cover;
+      border-radius: 12px;
     }
 
     header h1 {
@@ -42,7 +47,6 @@
       padding-left: 10px;
     }
 
-    /* HOOK */
     .hook {
       text-align: center;
       padding: 80px 20px;
@@ -51,7 +55,6 @@
       background: #FFEDAB;
     }
 
-    /* REVEAL */
     .reveal {
       text-align: center;
       padding: 80px 20px;
@@ -90,12 +93,6 @@
       display: block;
     }
 
-    .card p {
-      padding: 12px;
-      font-size: 0.9rem;
-      color: #444;
-    }
-
     .about, .skills {
       max-width: 800px;
       margin: auto;
@@ -106,6 +103,157 @@
       list-style: none;
       padding: 0;
     }
+
+    .skills li {
+      background: #FFEDAB;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 10px;
+    }
+
+    .tools img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: auto;
+      border-radius: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <video autoplay muted loop playsinline preload="auto">
+    <source src="intro.mp4" type="video/mp4">
+  </video>
+
+  <h1>Anushka Jha</h1>
+  <p>Helping brands grow with social media, copywriting & SEO</p>
+</header>
+
+<section class="hook">
+  Scroll if you want to know the truth
+</section>
+
+<section>
+  <h2>About Me</h2>
+  <div class="about">
+    <p>
+      I’m a creative soul who loves connecting with people through visual storytelling.
+    </p>
+    <p>
+      I specialize in video production and content creation for social media, helping brands and businesses tell their stories in fresh and engaging ways.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+
+    <h3>Hard Skills</h3>
+    <ul>
+      <li>Video editing for social media</li>
+      <li>Mobile video shooting</li>
+      <li>Social media post and visual design</li>
+      <li>AI-powered content creation</li>
+      <li>AI workflow automation</li>
+    </ul>
+
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Creativity</li>
+      <li>Strong visual sense</li>
+      <li>Attention to detail</li>
+      <li>Adaptability</li>
+    </ul>
+
+  </div>
+</section>
+
+<section>
+  <h2>Tools</h2>
+  <div class="tools">
+    <img src="tool.png" alt="Tools">
+  </div>
+</section>
+
+<section>
+  <h2>Carousels</h2>
+  <div class="grid">
+
+    <div class="card">
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="carousel1.mp4">
+      </video>
+    </div>
+
+    <div class="card">
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="carousel2.mp4">
+      </video>
+    </div>
+
+    <div class="card"><img src="carousel3.png"></div>
+    <div class="card"><img src="carousel4.png"></div>
+    <div class="card"><img src="carousel5.png"></div>
+    <div class="card"><img src="carousel6.png"></div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Copywriting</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="copy.png">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Reel</h2>
+  <div class="grid">
+    <div class="card">
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="reel.mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <p style="opacity:0.6;">still scrolling?</p>
+
+  <p>
+    Most content doesn’t fail because it’s bad.<br>
+    It fails because it’s ignored.
+  </p>
+
+  <p>
+    I help brands turn attention into growth through strategy,
+    storytelling, and scroll-stopping content.
+  </p>
+
+  <p class="highlight">
+    A creative social media manager doesn’t just glide —<br>
+    they accelerate your growth.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Anushka Jha • Portfolio</p>
+</footer>
+
+</body>
+  </html>    }
 
     .skills li {
       background: #FFEDAB;

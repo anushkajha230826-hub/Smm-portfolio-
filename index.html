@@ -9,33 +9,62 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
+      background: #F0E6DA;
+      color: #1a1a1a;
     }
 
     header {
       text-align: center;
-      padding: 50px 20px;
+    }
+
+    header video {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
     }
 
     header h1 {
+      margin-top: 20px;
       font-size: 2.5rem;
-      margin-bottom: 10px;
     }
 
     header p {
-      color: #94a3b8;
-      font-size: 1.1rem;
+      color: #555;
     }
 
     section {
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     h2 {
       margin-bottom: 20px;
-      border-left: 4px solid #3b82f6;
+      border-left: 4px solid #FFEDAB;
       padding-left: 10px;
+    }
+
+    /* HOOK */
+    .hook {
+      text-align: center;
+      padding: 80px 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      background: #FFEDAB;
+    }
+
+    /* REVEAL */
+    .reveal {
+      text-align: center;
+      padding: 80px 20px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+      font-size: 1.2rem;
+    }
+
+    .highlight {
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 1.4rem;
     }
 
     .grid {
@@ -45,7 +74,7 @@
     }
 
     .card {
-      background: #1e293b;
+      background: white;
       border-radius: 12px;
       overflow: hidden;
       transition: 0.3s;
@@ -64,14 +93,13 @@
     .card p {
       padding: 12px;
       font-size: 0.9rem;
-      color: #cbd5f5;
+      color: #444;
     }
 
     .about, .skills {
       max-width: 800px;
       margin: auto;
       line-height: 1.6;
-      color: #cbd5f5;
     }
 
     .skills ul {
@@ -80,7 +108,7 @@
     }
 
     .skills li {
-      background: #1e293b;
+      background: #FFEDAB;
       margin: 10px 0;
       padding: 12px;
       border-radius: 10px;
@@ -97,7 +125,7 @@
     footer {
       text-align: center;
       padding: 25px;
-      color: #64748b;
+      color: #555;
     }
   </style>
 </head>
@@ -105,7 +133,160 @@
 <body>
 
 <header>
+  <video autoplay muted loop playsinline>
+    <source src="intro.mp4" type="video/mp4">
+  </video>
+
   <h1>Your Name</h1>
+  <p>Helping brands grow with social media, copywriting & SEO</p>
+</header>
+
+<!-- HOOK -->
+<section class="hook">
+  Scroll if you want to know the truth
+</section>
+
+<!-- ABOUT -->
+<section>
+  <h2>About Me</h2>
+  <div class="about">
+    <p>
+      I’m a creative soul who loves connecting with people through visual storytelling.
+    </p>
+    <p>
+      I specialize in video production and content creation for social media, helping brands and businesses tell their stories in fresh and engaging ways. From shooting to editing, I turn ideas into scroll-stopping visuals that capture attention and emotion.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+
+    <h3>Hard Skills</h3>
+    <ul>
+      <li>Video editing for social media</li>
+      <li>Mobile video shooting</li>
+      <li>Social media post and visual design</li>
+      <li>AI-powered content creation (photos, images, videos)</li>
+      <li>Designing and setting up AI workflows for content automation</li>
+    </ul>
+
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Creativity</li>
+      <li>Strong visual sense</li>
+      <li>Attention to detail</li>
+      <li>Responsibility</li>
+      <li>Perseverance</li>
+      <li>Adaptability</li>
+      <li>Self-management</li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section>
+  <h2>Tools</h2>
+  <div class="tools">
+    <img src="tool.png" alt="Tools Used">
+  </div>
+</section>
+
+<!-- CAROUSELS -->
+<section>
+  <h2>Carousels</h2>
+  <div class="grid">
+
+    <div class="card">
+      <video autoplay muted loop playsinline>
+        <source src="carousel1.mp4" type="video/mp4">
+      </video>
+      <p>Carousel 1</p>
+    </div>
+
+    <div class="card">
+      <video autoplay muted loop playsinline>
+        <source src="carousel2.mp4" type="video/mp4">
+      </video>
+      <p>Carousel 2</p>
+    </div>
+
+    <div class="card">
+      <img src="carousel3.png">
+      <p>Carousel 3</p>
+    </div>
+
+    <div class="card">
+      <img src="carousel4.png">
+      <p>Carousel 4</p>
+    </div>
+
+    <div class="card">
+      <img src="carousel5.png">
+      <p>Carousel 5</p>
+    </div>
+
+    <div class="card">
+      <img src="carousel6.png">
+      <p>Carousel 6</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- COPY -->
+<section>
+  <h2>Copywriting</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="copy.png">
+      <p>Hook-based copy post</p>
+    </div>
+  </div>
+</section>
+
+<!-- REEL -->
+<section>
+  <h2>Reel</h2>
+  <div class="grid">
+    <div class="card">
+      <video autoplay muted loop playsinline>
+        <source src="reel.mp4" type="video/mp4">
+      </video>
+      <p>Hook-based reel content</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL REVEAL -->
+<section class="reveal">
+  <p style="opacity:0.6;">still scrolling?</p>
+
+  <p>
+    Most content doesn’t fail because it’s bad.<br>
+    It fails because it’s ignored.
+  </p>
+
+  <p>
+    I help brands turn attention into growth through strategy,
+    storytelling, and scroll-stopping content.
+  </p>
+
+  <p class="highlight">
+    A creative social media manager doesn’t just glide —<br>
+    they accelerate your growth.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Your Name • Portfolio</p>
+</footer>
+
+</body>
+  </html>  <h1>Anushka Jha</h1>
   <p>Helping brands grow with social media, copywriting & SEO</p>
 </header>
 
@@ -219,7 +400,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Your Name • Portfolio</p>
+  <p>© 2026 Anushka Jha• Portfolio</p>
 </footer>
 
 </body>

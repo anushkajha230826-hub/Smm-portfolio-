@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SMM Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      border-left: 4px solid #3b82f6;
+      padding-left: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.04);
+    }
+
+    .card img,
+    .card video {
+      width: 100%;
+      display: block;
+    }
+
+    .card p {
+      padding: 12px;
+      font-size: 0.9rem;
+      color: #cbd5f5;
+    }
+
+    .about, .skills {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+      color: #cbd5f5;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background: #1e293b;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 10px;
+    }
+
+    .tools img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: auto;
+      border-radius: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Your Name</h1>
+  <p>Helping brands grow with social media, copywriting & SEO</p>
+</header>
+
+<!-- ABOUT -->
+<section>
+  <h2>About Me</h2>
+  <div class="about">
+    <p>
+      I’m a creative soul who loves connecting with people through visual storytelling.
+    </p>
+    <p>
+      I specialize in video production and content creation for social media, helping brands and businesses tell their stories in fresh and engaging ways. From shooting to editing, I turn ideas into scroll-stopping visuals that capture attention and emotion.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+
+    <h3>Hard Skills</h3>
+    <ul>
+      <li>Video editing for social media</li>
+      <li>Mobile video shooting</li>
+      <li>Social media post and visual design</li>
+      <li>AI-powered content creation (photos, images, videos)</li>
+      <li>Designing and setting up AI workflows for content automation</li>
+    </ul>
+
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Creativity</li>
+      <li>Strong visual sense</li>
+      <li>Attention to detail</li>
+      <li>Responsibility</li>
+      <li>Perseverance</li>
+      <li>Adaptability</li>
+      <li>Self-management</li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section>
+  <h2>Tools</h2>
+  <div class="tools">
+    <img src="tool.png" alt="Tools Used">
+  </div>
+</section>
+
+<!-- CAROUSELS -->
+<section>
+  <h2>Carousels</h2>
+  <div class="grid">
+
+    <div class="card">
+      <video controls src="carousel1.mp4"></video>
+      <p>Carousel 1</p>
+    </div>
+
+    <div class="card">
+      <video controls src="carousel2.mp4"></video>
+      <p>Carousel 2</p>
+    </div>
+
+    <div class="card">
+      <img src="carousel3.png">
+      <p>Carousel 3</p>
+    </div>
+
+    <div class="card">
+      <img src="carousel4.png">
+      <p>Carousel 4</p>
+    </div>
+
+    <div class="card">
+      <img src="carousel5.png">
+      <p>Carousel 5</p>
+    </div>
+
+    <div class="card">
+      <img src="carousel6.png">
+      <p>Carousel 6</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- COPY -->
+<section>
+  <h2>Copywriting</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="copy.png">
+      <p>Hook-based copy post</p>
+    </div>
+  </div>
+</section>
+
+<!-- REEL -->
+<section>
+  <h2>Reel</h2>
+  <div class="grid">
+    <div class="card">
+      <video controls src="reel.mp4"></video>
+      <p>Hook-based reel content</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Your Name • Portfolio</p>
+</footer>
+
+</body>
+</html>
